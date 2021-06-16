@@ -1,0 +1,165 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_5_3_desktop" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="588.666666666667,1386.66666666667" sap2010:WorkflowViewState.IdRef="_5_3_desktop_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="_5_3_desktop" sap:VirtualizedContainerService.HintSize="536,1322" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Desktop" sap:VirtualizedContainerService.HintSize="494,1230" sap2010:WorkflowViewState.IdRef="Sequence_13">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open 'wemeetapp.exe  腾讯会议'" FileName="D:\腾讯会议\wemeetapp.exe" sap:VirtualizedContainerService.HintSize="452,1138" sap2010:WorkflowViewState.IdRef="OpenApplication_4" InformativeScreenshot="25cae92c1966b16485b0c4e5e4dfb3e1" Selector="&lt;wnd aaname='腾讯会议(LoadingWnd)' app='wemeetapp.exe' cls='TXGuiFoundation' title='腾讯会议' /&gt;">
+        <ui:OpenApplication.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="418,992" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  注册/登录'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition OffsetX="181" OffsetY="19" Position="TopLeft" />
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e8d4f3e7-523b-4414-9a83-255fb712cce9" InformativeScreenshot="506303dd4caecb6d5a23f8aea91853e7" Selector="&lt;ctrl name='ClientArea' role='pane' /&gt;&lt;ctrl name='LoadingViewContainerFrame' role='pane' /&gt;&lt;ctrl name='GuideFrame' role='pane' /&gt;&lt;ctrl name='BodyJoinMeetingPanel' role='pane' /&gt;&lt;ctrl name='注册/登录' role='push button' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'editable text'" EmptyField="False" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_7" SendWindowMessages="False" SimulateType="False" Text="18610963480">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c3212f30-bbf6-49b4-877e-9fb1431171ca" InformativeScreenshot="ddc18425c39ce9b370a962c0c736f4b9" Selector="&lt;ctrl name='ClientArea' role='pane' /&gt;&lt;ctrl name='LoadingViewContainerFrame' role='pane' /&gt;&lt;ctrl name='GuideFrame' role='pane' /&gt;&lt;ctrl name='NavigationBarFrame' role='pane' /&gt;&lt;ctrl name='Content' role='pane' /&gt;&lt;ctrl name='ViewContainer' role='pane' /&gt;&lt;ctrl name='AccountLoginWnd' role='pane' /&gt;&lt;ctrl name='content' role='pane' /&gt;&lt;ctrl idx='1' name='PhoneNumberContainer' role='pane' /&gt;&lt;ctrl name='PhoneNumberFrame' role='pane' /&gt;&lt;ctrl name='PhoneNumberPanelTitle' role='pane' /&gt;&lt;ctrl name='PhoneNumberPanel' role='pane' /&gt;&lt;ctrl name='Account_login_mobile_number_input' role='editable text' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'editable text'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition OffsetX="58" OffsetY="7" Position="TopLeft" />
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6dd5e26e-3a9b-438d-a42c-6a1ea7a0f72e" InformativeScreenshot="ea11c57562f3b61a6bb9878a79e6bda3" Selector="&lt;ctrl name='ClientArea' role='pane' /&gt;&lt;ctrl name='LoadingViewContainerFrame' role='pane' /&gt;&lt;ctrl name='GuideFrame' role='pane' /&gt;&lt;ctrl name='NavigationBarFrame' role='pane' /&gt;&lt;ctrl name='Content' role='pane' /&gt;&lt;ctrl name='ViewContainer' role='pane' /&gt;&lt;ctrl name='AccountLoginWnd' role='pane' /&gt;&lt;ctrl name='content' role='pane' /&gt;&lt;ctrl name='PasswordPanel' role='pane' /&gt;&lt;ctrl name='PasswordInputPanel' role='pane' /&gt;&lt;ctrl name='Account_login_password_input' role='editable text' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <Sequence DisplayName="Type password" sap:VirtualizedContainerService.HintSize="376,288" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="Password" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetPassword_4" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/SnPsKqmR0OWBr/PhkUYTwAAAAACAAAAAAAQZgAAAAEAACAAAACop5k/Wy8ujFL4RkOiu5j7TpJ6QaqED7OjjEzr6uCzAQAAAAAOgAAAAAIAACAAAAAXGi+CGhoEyYnxluFqMBOYAFtCjkBLW5GqJbfMS2sQFhAAAABBxib8d2AmZyyyRyUKlXlkQAAAADhxUj8U/LdCvn5iWJ/O0EcBn83bUVP2+JM1ju912CrpJ9dN9C4ruN/06222PhtfeVqrQF76qrgEJSAK94+09Gc=" Result="[Password]" />
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'editable text'" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_8" SendWindowMessages="False" SimulateType="False" Text="[Password]">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="620fa700-f760-42c5-8731-8e0ee0121980" InformativeScreenshot="6798d9cab67f532a01c80ba711831fe1" Selector="&lt;ctrl name='ClientArea' role='pane' /&gt;&lt;ctrl name='LoadingViewContainerFrame' role='pane' /&gt;&lt;ctrl name='GuideFrame' role='pane' /&gt;&lt;ctrl name='NavigationBarFrame' role='pane' /&gt;&lt;ctrl name='Content' role='pane' /&gt;&lt;ctrl name='ViewContainer' role='pane' /&gt;&lt;ctrl name='AccountLoginWnd' role='pane' /&gt;&lt;ctrl name='content' role='pane' /&gt;&lt;ctrl name='PasswordPanel' role='pane' /&gt;&lt;ctrl name='PasswordInputPanel' role='pane' /&gt;&lt;ctrl name='Account_login_password_input' role='editable text' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+              </Sequence>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  登录'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition OffsetX="133" OffsetY="13" Position="TopLeft" />
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="be4b080f-db87-4857-a5f0-dae61b8e3243" InformativeScreenshot="b1a41bff4ec45f869eee0b32ca9e4478" Selector="&lt;ctrl name='ClientArea' role='pane' /&gt;&lt;ctrl name='LoadingViewContainerFrame' role='pane' /&gt;&lt;ctrl name='GuideFrame' role='pane' /&gt;&lt;ctrl name='NavigationBarFrame' role='pane' /&gt;&lt;ctrl name='Content' role='pane' /&gt;&lt;ctrl name='ViewContainer' role='pane' /&gt;&lt;ctrl name='AccountLoginWnd' role='pane' /&gt;&lt;ctrl name='content' role='pane' /&gt;&lt;ctrl name='LoginPanel' role='pane' /&gt;&lt;ctrl name='登录' role='push button' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+            </Sequence>
+          </ActivityAction>
+        </ui:OpenApplication.Body>
+      </ui:OpenApplication>
+    </Sequence>
+  </Sequence>
+</Activity>
