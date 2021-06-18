@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_4_1_读取范围" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="618.666666666667,466" sap2010:WorkflowViewState.IdRef="_4_1_读取范围_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_4_1_读取范围" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="584,466" sap2010:WorkflowViewState.IdRef="_4_1_读取范围_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="26">
       <x:String>System.Activities</x:String>
@@ -63,7 +63,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadRange AddHeaders="True" DataTable="[rangeValue]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="334,86.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="A1:B6" SheetName="区域" WorkbookPath="C:\Users\Lenovo\Desktop\费用案例数据\基础数据.xlsx" />
+    <ui:ReadRange AddHeaders="True" DataTable="[rangeValue]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="334,86.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="A1:B6" SheetName="Sheet1" WorkbookPath="excel文件\dataTable.xlsx" />
     <ui:OutputDataTable DataTable="[rangeValue]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[dtString]" />
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[dtString]" />
   </Sequence>

@@ -52,17 +52,15 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Java.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="布尔类型" sap:VirtualizedContainerService.HintSize="695.333333333333,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="Falg" />
-      <Variable x:TypeArguments="x:Int32" Name="Num">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="Num" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -95,10 +93,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:InputDialog>
       <FlowStep.Next>
-        <FlowDecision x:Name="__ReferenceID1" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="84.6666666666667,86.6666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
-          <FlowDecision.Condition>
-            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Num mod 2=1" />
-          </FlowDecision.Condition>
+        <FlowDecision x:Name="__ReferenceID1" Condition="[Num mod 2=1]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="84.6666666666667,86.6666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -131,10 +126,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
               <FlowStep.Next>
-                <FlowDecision x:Name="__ReferenceID0" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="84.6666666666667,86.6666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
-                  <FlowDecision.Condition>
-                    <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Falg" />
-                  </FlowDecision.Condition>
+                <FlowDecision x:Name="__ReferenceID0" Condition="[Falg]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="84.6666666666667,86.6666666666667" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -152,7 +144,7 @@
                           <av:Size x:Key="ShapeSize">200,52</av:Size>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[“It is a odd number”]">
+                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[“It is an odd number”]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -169,7 +161,7 @@
                           <av:Size x:Key="ShapeSize">200,52</av:Size>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[“It is a even number”]">
+                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[“It is an even number”]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
